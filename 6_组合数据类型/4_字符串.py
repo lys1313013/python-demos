@@ -25,6 +25,9 @@ print(s.strip())
 print(s.split(' '))
 print('#'.join(["111", "222", "333"]))
 
+s = '文字。文字\n'
+s = s.replace('\n', ' ').replace('。', ' ').strip()
+print(s)
 
 # 统计字母、数字、符号的个数
 s = input('请输入：')
