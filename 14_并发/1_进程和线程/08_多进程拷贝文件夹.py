@@ -4,8 +4,8 @@ import multiprocessing
 
 def copy_file(file_name, source_dir, dest_dir):
     # 拼接源文件路径和目标文件路径
-    source_path = source_dir + "/" + file_name
-    dest_path = dest_dir + "/" + file_name
+    source_path = os.path.join(source_dir, file_name)
+    dest_path = os.path.join(dest_dir, file_name)
 
     # 打开源文件和目标文件
     with open(source_path, "rb") as source_file:
@@ -26,8 +26,8 @@ if __name__ == "__main__":
     dest_dir = "../复制"
 
     # 如果目标文件夹不存在则创建
-    if not os.path.isdir(dest_dir):
-        os.mkdir(dest_dir)
+    if not os.path.exists(dest_dir):
+        os.makedirs(dest_dir)
 
     # 遍历文件夹
     for file_name in os.listdir(source_dir):
