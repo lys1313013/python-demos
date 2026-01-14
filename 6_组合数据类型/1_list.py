@@ -2,6 +2,9 @@ list1 = []
 print(list1)
 print(type(list1))
 
+if not list1:
+    print("列表是空的")
+
 list2 = [1, 2, 3, True, 'hello']
 print(list2)
 print(list2[2])
@@ -35,3 +38,16 @@ print(list2)
 
 nums = [1, 2, 3, 4]
 print(sum(nums))
+
+print("排序")
+nums = [3, 1, 4, 2]
+nums.sort()
+print(nums)
+
+dicts = [
+    {"name": "张三", "age": 18},
+    {"name": "李四", "age": 20},
+    {"name": "王五", "age": 15},
+]
+dicts.sort(key=lambda x: x["age"])
+print(dicts)

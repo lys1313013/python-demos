@@ -9,6 +9,10 @@ print("字符串转集合")
 s = set('abc')
 print(s)
 
+print("往集合添加一个元素")
+s.add('d')
+print(s)
+
 print("往集合中添加多个元素")
 s.update({'c', 'd', 'f'})
 print(s)

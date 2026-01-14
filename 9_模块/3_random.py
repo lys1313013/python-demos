@@ -3,7 +3,5 @@ import random
 # 生成随机小数
 print(random.random())
 
-print(random.randint(0,100))
-
-def main():
-    print('执行到这')
+# 生成[a,b]之间的整数
+print(random.randint(0, 1))
