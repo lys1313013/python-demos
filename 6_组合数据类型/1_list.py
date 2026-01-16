@@ -39,6 +39,12 @@ print(list2)
 nums = [1, 2, 3, 4]
 print(sum(nums))
 
+print("切片.注意:左闭右开")
+print(f"截取第一个元素：{nums[:1]}")
+print(f"截取第一个元素：{nums[0:1]}")
+print(f"截取第二个元素：{nums[1:2]}")
+print(f"截取除最后一个元素外的所有元素 {nums[:-1]}")
+
 print("排序")
 nums = [3, 1, 4, 2]
 nums.sort()
