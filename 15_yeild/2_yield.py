@@ -4,6 +4,7 @@ def foo():
     yield 2
     print(22)
 
+
 f = foo()
 for i in f:
-    print(i)
+    print("for循环拿到的结果：", i)
