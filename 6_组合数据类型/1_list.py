@@ -57,3 +57,11 @@ dicts = [
 ]
 dicts.sort(key=lambda x: x["age"])
 print(dicts)
+
+
+
+list1 = [1,2,3]
+list2 = [4,5,6]
+list1.extend(list2)
+print("将一个 list 追加到另一个 list")
+print(list1)
